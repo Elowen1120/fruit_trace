@@ -1,0 +1,85 @@
+:root {
+  --ft-active: #c44c4c;
+  --ft-completed: #f6b0b8;
+  --ft-neutral: #e0e0e0;
+  --ft-bg: #fff5f7;
+  --ft-text: #4a2c2f;
+  --ft-pink-soft: #fff0f3;
+}
+
+body {
+  color: var(--ft-text);
+  background: linear-gradient(180deg, #fff8fa 0%, #ffeef2 100%) !important;
+  min-height: 100vh;
+}
+
+.ft-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 1rem rgba(196, 76, 76, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ft-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.45rem 1.25rem rgba(196, 76, 76, 0.14);
+}
+
+.ft-btn-press:active {
+  transform: scale(0.98);
+}
+
+.btn-ft-primary {
+  background-color: var(--ft-active);
+  border-color: var(--ft-active);
+  color: #fff;
+}
+.btn-ft-primary:hover {
+  background-color: #a83d3d;
+  border-color: #a83d3d;
+  color: #fff;
+}
+
+.ft-step-active {
+  background-color: var(--ft-active) !important;
+  color: #fff !important;
+  border-color: var(--ft-active) !important;
+}
+.ft-step-completed {
+  background-color: var(--ft-completed) !important;
+  color: #5c2a30 !important;
+  border-color: #e89aa5 !important;
+}
+.ft-step-neutral {
+  background-color: var(--ft-neutral) !important;
+  color: #555 !important;
+  border-color: #ccc !important;
+}
+
+.ft-table tbody tr {
+  transition: background 0.15s ease;
+}
+.ft-table tbody tr:hover {
+  background-color: var(--ft-pink-soft) !important;
+}
+
+.modal.fade .modal-dialog {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.modal.show .modal-dialog {
+  transform: none;
+}
+
+.ft-modal-anim {
+  animation: ftModalIn 0.35s ease;
+}
+@keyframes ftModalIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

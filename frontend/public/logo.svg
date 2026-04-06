@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <circle cx="32" cy="32" r="30" fill="#ffe4ea" stroke="#c44c4c" stroke-width="2"/>
+  <!-- 叶子 -->
+  <path fill="#4caf50" d="M44 18c-8 2-14 8-16 16 6-2 12-8 16-16z"/>
+  <path fill="#81c784" d="M42 20c-4 6-10 10-14 12 2-6 6-10 14-12z"/>
+  <!-- 果实轮廓 -->
+  <path fill="#c44c4c" d="M32 14c-6 8-14 14-14 22 0 8 6 14 14 14s14-6 14-14c0-8-8-14-14-22z"/>
+  <ellipse cx="32" cy="38" fill="#fff5f7" rx="10" ry="12"/>
+  <path fill="#a83d3d" d="M32 18l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z"/>
+</svg>
